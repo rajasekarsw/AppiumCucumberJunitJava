@@ -1,14 +1,14 @@
 name: Mobile Automation
 on:
   push:
-    branches:[master]
+    branches: [master]
   pull_request:
-  workflow dispatch:
+  workflow_dispatch:
     inputs:
       tags:
         description: "Cucumber tag expression"
         default: "@smoke"
-  jobs:
+jobs:
     test:
       runs-on: obuntu-latest
       timeout-minutes: 30
