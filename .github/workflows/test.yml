@@ -10,7 +10,7 @@ on:
         default: "@smoke"
 jobs:
     test:
-      runs-on: obuntu-latest
+      runs-on: ubuntu-latest
       timeout-minutes: 30
 
       steps:
